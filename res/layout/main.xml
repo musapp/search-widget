@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/main">
+	<!-- 
+		Search layout
+		If you do not need a search on the home page, 
+		you must do search_layout set visibility in View.GONE
+	-->
+	<ru.j2ee.moskvin.widget.SearchPanel
+		style="@style/SearchLayout" 
+		android:id="@+id/search_panel" 
+		android:layout_alignParentTop="true" 
+		android:layout_centerInParent="true"/>
+
+	<!-- Page 1 -->
+	<ScrollView
+		android:layout_below="@id/search_panel"
+		android:tag="@string/tag_search_page1"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="none"
+		android:fadingEdge="none"/>
+
+	<!-- Page 2 -->
+	<ru.j2ee.moskvin.widget.SearchListView
+		android:id="@+id/page2"
+		android:tag="@string/tag_search_page2"
+		android:layout_below="@id/search_panel"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone"/>
+
+</RelativeLayout>

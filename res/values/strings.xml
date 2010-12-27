@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, SearchDemo!</string>
+	<string name="app_name">Search Demo</string>
+	<string name="search_hint">Search</string>
+	<string name="button_cancel">Cancel</string>
+	
+	<string name="tag_search_page1">Search Page 1</string>
+	<string name="tag_search_page2">Search Page 2</string>
+	<string name="search_for">Search for</string>
+</resources>
